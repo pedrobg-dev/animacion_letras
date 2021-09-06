@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     async function mostrarPersonas() {  
-        
+        // OCULTAR IMAGANES PICKACHU
         document.getElementById("imagen-uno").style.visibility = 'hidden';
-        document.getElementById("imagen-dos").style.visibility = 'hidden';
-        //animacion letras
+        document.getElementById("imagen-dos").style.visibility = 'hidden';        
+
+        // ANIMACION LETRAS
         let tl = gsap.timeline({ repeat: 0, yoyo: false });
-        const palabras = ['ANDREA', 'ERES', 'UNA', 'CHICA', 'HERMOSA', 'Y', 'SERÁS', 'UNA', 'GRAN', 'INGENIERA❤'];        
+        const palabras = ['ESCRIBE', 'TU', 'MENSAJE', 'AQUI'];
         let divs = '';
         for (let palabra of palabras) {
             divs = '';
