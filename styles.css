@@ -1,0 +1,40 @@
+body {
+    padding: 2rem 0 2rem 0;
+    background-image: url(img/3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60px;
+}
+
+.content-color {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: var(--border);
+    border-radius: 10px;
+    margin: 100px 300px;
+    padding: 10px;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.altura {
+    height: auto;
+    /* background-color: aquamarine; */
+}
+
+.imagen {
+    width: 191px;
+    height: 254px;
+}
+
+.imagen-v {
+    /* transform: scaleX(-1); */
+}
+
+.anchura-f2 {
+    width: 50%;
+}
+
+.imagenes {
+    visibility: hidden;
+}
