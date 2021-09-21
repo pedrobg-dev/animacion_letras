@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ANIMACION LETRAS
         let tl = gsap.timeline({ repeat: 0, yoyo: false });
-        const palabras = ['ESCRIBE', 'TU', 'MENSAJE', 'AQUI'];
+        const palabras = ['HOLAP', 'SHANIA', 'ERES', 'UNA', 'CHICA', 'HERMOSA ❤', 'TE', 'GUSTARIA', 'SALIR', 'UN', 'DIA', 'CONMIGO?'];
         let divs = '';
         for (let palabra of palabras) {
             divs = '';
