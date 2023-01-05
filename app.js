@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ANIMACION LETRAS
         let tl = gsap.timeline({ repeat: 0, yoyo: false });
-        const palabras = ['HOLAA', 'SOFIA', 'QUIERO', 'DECIRTE', 'QUE', 'ERES', 
-        'UNA', 'CHICA', 'MUY LINDA', 'E  INTELIGENTE', 'Y  QUISIERA', 'INVITARTE', 'AL CINE', 'ACEPTAS?'];
+        const palabras = ['HOLAA', 'VALERIA', 'SOLO', 'QUERIA', 'DECIRTE', 'QUE  ERES', 
+        'UNA  CHICA', 'MUY LINDA', 'E  INTELIGENTE', 'Y  ESTOY', 'SEGURO', 'TENDRAS', 'UN  EXCELENTE', '2023'];
         let divs = '';
         for (let palabra of palabras) {
             divs = '';
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(divs);
             document.getElementById('palabras').innerHTML = divs;
             await tl.from('.letra', {
-                duration: 1.5,
+                duration: 1.1,
                 y: -150, //'random(-500,500)',
                 scale: 0,
                 stagger: 0.4,
