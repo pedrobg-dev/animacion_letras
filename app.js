@@ -7,33 +7,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ANIMACION LETRAS
         let tl = gsap.timeline({ repeat: 0, yoyo: false });
-        const palabras = ['HOLAA', 'VALERIA', 'SOLO', 'QUERIA', 'DECIRTE', 'QUE  ERES', 
-        'UNA  CHICA', 'MUY LINDA', 'E  INTELIGENTE', 'Y  ESTOY', 'SEGURO', 'TENDRAS', 'UN  EXCELENTE', '2023'];
+        const palabras = ['¡HOLA ODETTE!', 'NO TODOS ', 'LOS DÍAS ', 'SON BONITOS,', 'PERO TÚ SI ', 'ESTÁS BONITA ', 'TODOS LOS DÍAS'];
         let divs = '';
         for (let palabra of palabras) {
             divs = '';
-            console.log(palabra);
             for (let i = 0; i < palabra.length; i++) {
-                divs += `<div class="letra"><h1 class="display-1 d-inline fw-bold">${palabra[i]}</h1></div>`;
+                let char = palabra[i] === ' ' ? '&nbsp;' : palabra[i]; // Añadir espacio
+                divs += `<div class="letra"><h1 class="display-1 d-inline fw-bold">${char}</h1></div>`;
             }
 
-            console.log(divs);
             document.getElementById('palabras').innerHTML = divs;
             await tl.from('.letra', {
                 duration: 1.1,
                 y: -150, //'random(-500,500)',
                 scale: 0,
                 stagger: 0.4,
-                //delay: 2 // it's better to use timeline
             }, '+=1');            
         }
 
         let tl2 = gsap.timeline({ repeat: 0, yoyo: false });
-        //animacion imagenes
+        // Animación de imágenes
         document.getElementById("imagen-uno").style.visibility = 'visible';
-        await tl2.to('#imagen-uno', { duration: 2.5, ease: "elastic.out(2, 0.4)", y: -90 });
+        await tl2.fromTo('#imagen-uno', 
+            { y: 150 }, // Posición inicial
+            { duration: 2.5, ease: "elastic.out(2, 0.4)", y: 0 } // Posición final
+        );
         document.getElementById("imagen-dos").style.visibility = 'visible';
-        await tl2.to('#imagen-dos', { duration: 2.5, ease: "elastic.out(2, 0.4)", y: -90 });
+        await tl2.fromTo('#imagen-dos', 
+            { y: 150 }, // Posición inicial
+            { duration: 2.5, ease: "elastic.out(2, 0.4)", y: 0 } // Posición final
+        );
         document.getElementById('boton').textContent = "REPETIR";
     }
 
