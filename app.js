@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ANIMACION LETRAS
         let tl = gsap.timeline({ repeat: 0, yoyo: false });
-        const palabras = ['¡HOLA ODETTE!', '¿SABES ALGO?', 'NO TODOS', 'LOS DÍAS ', 'SON BONITOS,', 'PERO TÚ SÍ ', 'ESTÁS BONITA ', 'TODOS LOS', 'DÍAS :)'];
-        let divs = '';
+        const palabras = ['¡HOLA ODETTE!', '¿SABES ALGO?', 'NO TODOS', 'LOS DÍAS ', 'SON BONITOS,', 'PERO TÚ SÍ ', 'ESTÁS BONITA ', 'TODOS LOS', 'DÍAS :) ', '¡BONITO FIN!'];        let divs = '';
         for (let palabra of palabras) {
             divs = '';
             for (let i = 0; i < palabra.length; i++) {
